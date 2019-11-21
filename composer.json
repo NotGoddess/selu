@@ -1,0 +1,25 @@
+{
+    "name": "notgoddess/selu",
+    "description": "Drupal 8 subtheme of USWDS",
+    "type": "drupal-theme",
+    "homepage": "https://github.com/notgoddess/selu",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Sara Jacobson",
+            "email": "notgoddess@gmail.com"
+        }
+    ],
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    },
+    "require": {},
+    "require-dev": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {},
+    "extra": []
+}

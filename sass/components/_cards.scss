@@ -1,0 +1,53 @@
+// Variables
+
+$card-border: units($theme-card-border-width) solid color($theme-card-border-color);
+
+// Card Styles
+
+// A card
+
+.usa-card {
+  @include typeset;
+  @include border-box-sizing;
+
+  .usa-card__img {
+    border: 4px solid;
+    border-radius: 25%;
+    margin-right: units(3);
+  }
+  .usa-card__heading {
+    @include typeset-h3;
+  }
+
+  .usa-card__body {
+    > :first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+
+.usa-card--bordered {
+  .usa-card__heading {
+    margin-bottom: 0;
+
+  background-color: color('base-lightest');
+  background-position: right units(2.5) center;
+  background-size: units(2);
+  color: color('ink');
+  cursor: pointer;
+  display: inline-block;
+  font-weight: font-weight('bold');
+  margin: 0;
+  padding: units(2) units(2.5) * 2 + units(2) units(2) units(2.5);
+  text-decoration: none;
+  width: 100%;
+  }
+  .usa-card__content {
+    border-bottom: $card-border;
+    border-left: $card-border;
+    border-right: $card-border;
+    padding-bottom: units(2);
+  }
+}
+

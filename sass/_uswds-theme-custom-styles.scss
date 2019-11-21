@@ -1,0 +1,106 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
+.region-header .logo-img img {
+    height: 3rem;
+    transition: all .4s;
+  }
+
+@media (max-width: 63.99em) {
+  .region-header .logo-img img {
+    height: 3rem;
+  }
+}
+@media (min-width: 64em) {
+  .usa-header--extended .usa-logo {
+    margin-top:1rem;
+    margin-bottom:0.5rem;
+  }
+  .region-header .logo-img img {
+    height: 5rem;
+  }
+
+  header nav.usa-nav .usa-nav__inner {
+    display:flex;
+    flex-direction: row-reverse;
+  }
+
+  header nav.usa-nav .usa-nav__inner > * {
+    flex: auto;
+  }
+
+  header nav.usa-nav .usa-nav__inner form.usa-search {
+    padding-top: .4rem ;
+    padding-bottom: .4rem ;
+  }
+
+  header nav.usa-nav .usa-nav__inner form.usa-search:focus,
+  header nav.usa-nav .usa-nav__inner form.usa-search:focus-within
+  {
+    flex-basis: 60%;
+    transition-duration: .3s;
+  }
+
+
+}
+
+.usa-list-inline,
+.list-inline {
+  li {
+    display: inline;
+
+    &::after {
+      content: ", ";
+    }
+    &:last-child::after {
+      content: "";
+    }
+  }
+}
+
+.region-footer {
+
+display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.foo {
+  clip-path: polygon(0% 64%, 51% 0%, 100% 64%, 82% 100%, 17% 100%);
+}
+
+/*
+<svg width="0" height="0">
+  <clipPath id="clipPolygon">
+    <polygon points="176 232,247 342,378 349,444 229,300 50">
+    </polygon>
+  </clipPath>
+</svg>
+*/
+.cutout {
+  /*Chrome,Safari*/
+-webkit-clip-path: polygon(176px 232px,247px 342px,378px 349px,444px 229px,300px 50px);
+
+/*Firefox*/
+clip-path: url("#clipPolygon");
+}

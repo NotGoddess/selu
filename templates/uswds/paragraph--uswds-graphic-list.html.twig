@@ -1,0 +1,27 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    'usa-graphic-list',
+    'usa-section',
+    'usa-section--dark'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+      <div class="grid-container">
+
+      {% for graphic_list_row in graphic_list_rows %}
+        <div class="usa-graphic-list__row grid-row grid-gap">
+          {{ graphic_list_row }}
+        </div>
+      {% endfor %}
+
+      </div>
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
