@@ -71,6 +71,7 @@
  */
 #}
 <article{{ attributes.addClass('usa-card').addClass('usa-card--bordered') }}>
+<div class="usa-card__inner">
   <!-- Use the accurate heading level to maintain the document outline -->
   {{ title_prefix }}
   {% if not page %}
@@ -87,5 +88,5 @@
     {{ content.field_product_insect_control }}
     {{ content.field_product_traits }}
   </div>
-
+  </div>
 </article>

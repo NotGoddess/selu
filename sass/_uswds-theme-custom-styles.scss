@@ -19,6 +19,7 @@ i.e.
 @include u-padding-right('05');
 ----------------------------------------
 */
+
 .region-header .logo-img img {
     height: 3rem;
     transition: all .4s;
@@ -77,11 +78,16 @@ i.e.
 }
 
 .region-footer {
-
-display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
+  .usa-footer__logo {
+    align-content: baseline;
 
+    .usa-footer__logo-img {
+        max-width: 100%;
+    }
+  }
 
 
 

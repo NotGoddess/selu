@@ -255,16 +255,10 @@
                 <div class="mobile-lg:grid-col-auto">
                   <img class="usa-footer__logo-img"
                        src="{{ footer_agency_logo }}"
-                       alt="{{ 'Agency logo'|t }}">
+                       alt="{{ footer_agency_name }}">
                 </div>
               {% endif %}
 
-              {% if footer_agency_name %}
-                <div class="mobile-lg:grid-col-auto">
-                  <h3
-                    class="usa-footer__logo-heading">{{ footer_agency_name }}</h3>
-                </div>
-              {% endif %}
 
             {% if footer_agency_url %}
             </a>

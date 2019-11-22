@@ -44,29 +44,27 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes.addClass('padding-y-1') }}>
+    <div{{ attributes.addClass('padding-y-0') }}>
       {% for item in items %}
         <div{{ item.attributes }}>{{ item.content }}</div>
       {% endfor %}
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes.addClass('padding-y-1') }}>{{ item.content }}</div>
+      <div{{ attributes.addClass('padding-y-0') }}>{{ item.content }}</div>
     {% endfor %}
   {% endif %}
 {% else %}
-  <strong{{ attributes.addClass('padding-y-1 margin-0') }}>
-    <span{{ title_attributes.addClass(title_classes) }}>{{ label }}</span></strong>
+  <div{{ attributes.addClass('padding-y-0') }}>
+    <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
     {% if multiple %}
-
+      <div>
     {% endif %}
-    <ul class="usa-list usa-list--unstyled list-inline">
     {% for item in items %}
-      <li{{ item.attributes }}>{{ item.content }}</li>
+      <div{{ item.attributes }}>{{ item.content }}</div>
     {% endfor %}
-    </ul>
     {% if multiple %}
-
+      </div>
     {% endif %}
-
+  </div>
 {% endif %}

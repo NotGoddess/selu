@@ -10,6 +10,10 @@ $card-border: units($theme-card-border-width) solid color($theme-card-border-col
   @include typeset;
   @include border-box-sizing;
 
+  .usa-card__inner {
+    margin:1rem;
+  }
+
   .usa-card__img {
     border: 4px solid;
     border-radius: 25%;
@@ -51,3 +55,19 @@ $card-border: units($theme-card-border-width) solid color($theme-card-border-col
   }
 }
 
+
+// A group of cards
+.product-cards,
+.usa-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.product-cards .product-card,
+.usa-cards .usa-card {
+    /* padding: 1rem; */
+    /* border: 10px solid transparent; */
+    box-sizing: border-box;
+    flex: 1 1 50%;
+}

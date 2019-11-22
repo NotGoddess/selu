@@ -48,8 +48,6 @@
  * @see html.html.twig
  */
 #}
-<svg height="50" width="50"> <clippath id="clipPolygon"> <polygon points="176 232,247 342,378 349,444 229,300 50"> </polygon> </clippath> </svg>
-
 {% if government_banner %}
   <section class="usa-banner">
     {{ government_banner }}
@@ -258,16 +256,10 @@
                 <div class="mobile-lg:grid-col-auto">
                   <img class="usa-footer__logo-img"
                        src="{{ footer_agency_logo }}"
-                       alt="{{ 'Agency logo'|t }}">
+                       alt="{{ footer_agency_name }}">
                 </div>
               {% endif %}
 
-              {% if footer_agency_name %}
-                <div class="mobile-lg:grid-col-auto">
-                  <h3
-                    class="usa-footer__logo-heading">{{ footer_agency_name }}</h3>
-                </div>
-              {% endif %}
 
             {% if footer_agency_url %}
             </a>
