@@ -20,9 +20,15 @@ i.e.
 ----------------------------------------
 */
 
+.products-list .usa-list--unstyled article {
+border: 5px solid $theme-color-primary;
+    margin: 1rem;
+    padding: 1rem;
+}
+
 .region-header .logo-img img {
     height: 3rem;
-    transition: all .4s;
+    transition: all .4s; 
   }
 
 @media (max-width: 63.99em) {
@@ -32,11 +38,13 @@ i.e.
 }
 @media (min-width: 64em) {
   .usa-header--extended .usa-logo {
-    margin-top:1rem;
+    margin-top:.5rem;
     margin-bottom:0.5rem;
   }
+  
+
   .region-header .logo-img img {
-    height: 5rem;
+    height: 7rem;
   }
 
   header nav.usa-nav .usa-nav__inner {
