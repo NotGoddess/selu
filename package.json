@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Subtheme based on the US Web Design Standards",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NotGoddess/selu.git"
@@ -26,6 +23,7 @@
     "autoprefixer": "^9.7.2",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
+    "fancy-log": "^1.3.3",
     "gulp": "^4.0.0",
     "gulp-notify": "^3.2.0",
     "gulp-postcss": "^8.0.0",
@@ -37,5 +35,19 @@
     "uswds": "^2.2.1",
     "uswds-gulp": "github:uswds/uswds-gulp"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "watch": "gulp watch",
+    "build": "gulp build",
+    "build:css": "gulp sass",
+    "build:js": "gulp javascript",
+    "prepare": "gulp build",
+    "start": "fractal start --sync",
+    "play": "gulp play"
+  },
+  "fred": "martha",
+  "config": {
+    "fred": "barney"
+  }
 }

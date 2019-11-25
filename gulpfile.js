@@ -11,19 +11,20 @@ USWDS SASS GULPFILE
 ----------------------------------------
 */
 
-var autoprefixer  = require('autoprefixer');
-var autoprefixerOptions = require('./node_modules/uswds-gulp/config/browsers');
-var cssnano       = require('cssnano');
-var gulp          = require('gulp');
-var mqpacker      = require('css-mqpacker');
-var path          = require('path');
-var pkg           = require('./node_modules/uswds/package.json');
-var postcss       = require('gulp-postcss');
-var rename        = require('gulp-rename');
-var replace       = require('gulp-replace');
-var sass          = require('gulp-sass');
-var sourcemaps    = require('gulp-sourcemaps');
-var uswds         = require('./node_modules/uswds-gulp/config/uswds');
+const autoprefixer  = require('autoprefixer');
+const autoprefixerOptions = require('./node_modules/uswds-gulp/config/browsers');
+const cssnano       = require('cssnano');
+const gulp          = require('gulp');
+const mqpacker      = require('css-mqpacker');
+const path          = require('path');
+const pkg           = require('./node_modules/uswds/package.json');
+const postcss       = require('gulp-postcss');
+const rename        = require('gulp-rename');
+const replace       = require('gulp-replace');
+const sass          = require('gulp-sass');
+const sourcemaps    = require('gulp-sourcemaps');
+const uswds         = require('./node_modules/uswds-gulp/config/uswds');
+const pkg2 = require('./package.json');
 
 /*
 ----------------------------------------
@@ -128,3 +129,10 @@ gulp.task('watch-sass', function () {
 gulp.task('watch', gulp.series('build-sass', 'watch-sass'));
 
 gulp.task('default', gulp.series('watch'));
+
+
+gulp.task('play', function(done) {
+  console.log("foooooo");
+  console.log(pkg2.fred);
+  done();
+});
