@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/NotGoddess/selu#readme",
   "devDependencies": {
-    "@frctl/fractal": "^1.2.0",
+    "@frctl/fractal": "^1.5.14",
     "@frctl/mandelbrot": "^1.2.1",
     "@frctl/nunjucks": "^2.0.1",
     "autoprefixer": "^9.7.2",
